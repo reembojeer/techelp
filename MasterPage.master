@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TecHelp</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="StyleSheet2.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link href="admin.css" rel="stylesheet" />
+    <link href="Form.css" rel="stylesheet" />
+     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+  
+    <style type="text/css">
+		.emails-table { width: 600px; border: solid 1px #444444; }
+		.emails-table-header { font-family: "Trebuchet MS"; font-size: 9pt; height: 40px; padding: 10px;
+			background-color: #434343; color: white;
+			border: solid 1px #444444; }
+		.emails-table-header-cell { font-family: "Georgia"; font-size: 9pt;
+			font-weight: bold; border: solid 1px #666666; padding: 6px; }
+		.emails-table-cell { font-family: "Georgia"; font-size: 9pt;
+			border: solid 1px #666666; padding: 6px; }
+		.emails-table-footer { border: solid 1px #666666; padding: 3px;
+			width: 50%; }
+		.email-datetime { float: right; color: #666666; }
+		
+		a { font-family: "Lucida Sans Unicode", "Trebuchet MS"; font-size: 9pt;
+			color: #005B7F; }
+		a:hover { color:red; }
+    </style>
+   
+
+</head>
+
+<body>
+  <form id="MasterForm" runat="server">
+             <div class="container-fluid MyContainer">
+                <div class="row">
+                    
+                    <div class="col-xs-12">
+                        <div class="Logo">
+                        <img class="img-responsive" src="img/Logo2.png" alt="Logo" style="width: 250px; height: 100px; float: left;" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="row">
+            <div class="Mynavbar">
+           
+                <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >TecHelp</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <asp:ContentPlaceHolder ID="Account" runat="server">
+      <li class="active"><a href="Default.aspx">Home</a></li>
+      <li><a href="About.aspx">About </a></li>
+        
+          <li><a href="Team.aspx">Team</a></li>
+          <li><a href="Contact.aspx">Contact</a></li>
+          </asp:ContentPlaceHolder>
+        
+      
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+       <asp:ContentPlaceHolder ID="LogIn" runat="server">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </asp:ContentPlaceHolder>
+    </ul>
+  </div>
+</nav>
+
+            </div>
+                </div> 
+
+            <asp:ContentPlaceHolder ID="Body1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+
+<div>
+            <%--<div class="MyShadow">
+                <div class="container-fluid">
+
+                    <h1>WE CAN HELP!</h1>
+                    <br />
+                </div>
+            </div>
+            <%--<asp:ContentPlaceHolder ID="Changable" runat="server">
+                 </asp:ContentPlaceHolder>--%>
+        </div>
+       
+           
+    </div>
+
+     
+      
+    <%--<div class="MyFooter">
+         <div class="row">
+             <div class="col-xs-4"></div>
+        <div class="col-xs-5"></div>
+             <div class="col-xs-3"><img src="img/footerLogo.png" alt="Logo" style="width: 150px; height: 100px"/></div>
+             </div>
+         </div>--%>
+    <footer>
+      <%-- <div class="MyFooter">
+           <div class="row">
+               
+               <div class="col-xs-12"><img src="img/footerLogo.png" alt="Logo" style="width: 300px; height: 150px"/></div>
+                   </div> 
+
+           <div class="row">
+               
+               <div class="col-xs-12"><img src="img/footerLogo.png" alt="Logo" style="width: 300px; height: 150px"/></div>
+                   </div> 
+
+           </div>--%> 
+        <div class="container-fluid " style="background-color:#ccffcc">
+            <div class="row">
+                <div class="col-xs-5"><i class="fa fa-instagram" style="font-size:13px; margin-top:30px; margin-left:30px; color:gray" ><a href="https://www.instagram.com/techelp_care" style="text-decoration:none; color:gray">  tecHelp_care</a></i></div>
+                <div class="col-xs-7"><i class="fa fa-envelope-o" style="font-size:13px; margin-top:30px; margin-right:37px; float:right; color:gray">    techelp.contact@gmail.com  </i></div>
+                 
+            </div> 
+            <div class="row"> 
+                
+                <div class="col-xs-5"><i class="fa fa-twitter" style="font-size:13px; margin-left:30px; color:gray"><a href="https://twitter.com/tecHelp_care" style="text-decoration:none; color:gray">  tecHelp_care </a></i></div>
+                 <div class="col-xs-7"><i class="fa" style="font-size:13px; margin-left:40px; float:right; margin-top:5px; color:gray">All rights reserved for KAU Deanship </i></div>
+            </div>
+            <div class="row" style=" text-align: center; margin-left:10px; margin-top:10px">
+               
+               <div class="col-xs-12"><img src="img/footerLogo.png" alt="Logo" style="width: 150px; height: 60px"/></div>
+             
+                   </div> 
+
+          
+        </div>
+        
+        
+    </footer>
+      </form>
+</body>
+</html>

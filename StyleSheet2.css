@@ -1,0 +1,117 @@
+﻿body {
+     background: linear-gradient(to bottom, #006666 0%, #ccffcc 78%);
+}
+
+Button{
+    background-color: #45a049;
+}
+
+.font{
+    font-weight: bold;
+}
+.MyContainer{
+    background-color:white;
+    margin-top:50px;
+    margin-left:25px;
+    margin-right:25px;
+    height:auto; 
+} 
+
+.MyFooter{
+  /*background-color:#ccffcc;*/
+  
+  height:80px; 
+  text-align: center;
+  position:fixed;
+    margin-left:25px;
+    margin-right:25px;
+    
+}
+.Logo{
+    margin-top:50px;
+    margin-bottom:50px;
+   
+
+} 
+h1{
+    font-style:normal;
+    font-family:'Yu Gothic UI';
+    margin-left:50px;
+   
+} 
+
+.MyShadow {
+  align-content:center;
+  height: 150px;
+  text-align:center;
+  margin-left:10px;
+  margin-top:50px;
+ 
+ 
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.Mynavbar{
+    margin-top:15px;
+    margin-bottom:20px;
+} 
+
+.btn-link:hover{
+   
+    border-color:green;
+    
+}
+
+div.card {
+  width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: white;
+  color: white;
+  /*padding: 10px;*/
+  font-size: 40px;
+}
+
+div.card.container {
+  /*padding: 10px;*/
+} 
+
+.MyShadow2 {
+  align-content:center;
+  height: 150px;
+  text-align:center;
+  margin-left:10px;
+  margin-top:50px;
+ 
+ background-color:aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.parallelogram {
+	width: 300px;
+	height: 250px;
+    color:black;
+    transition: transform .2s;
+}
+
+.MyShadowCircle {
+    align-content: center;
+    height: 150px;
+    text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.parallelogram:hover{
+    transform: scale(1.1);
+} 
+
+
+
+
+
+
